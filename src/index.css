@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root{
+  --custom-primary-color:rgba(24, 111, 101, 0.9);
+  --custom-primary-color-o8:rgba(24, 111, 101, 0.8);
+  --custom-primary-color-o7:rgba(24, 111, 101, 0.7);
+  --custom-primary-color-o6:rgba(24, 111, 101, 0.6);
+  --custom-primary-color-o5:rgba(24, 111, 101, 0.5);
+  --custom-primary-color-o4:rgba(24, 111, 101, 0.4);
+  --custom-primary-color-o1:rgba(24, 111, 101, 0.1);
+
+
+  --custom-primary-color-light: rgba(36, 189, 168, 0.9);
+  --custom-primary-color-light-o8: rgba(36, 189, 168, 0.8);
+  --custom-primary-color-light-o7: rgba(36, 189, 168, 0.7);
+  --custom-primary-color-light-o1: rgba(36, 189, 168, 0.1);
+
+
+  --custom-primary-color-dark: rgba(9, 71, 63, 0.9);
+  --custom-primary-color-dark-o8: rgba(9, 71, 63, 0.8);
+  --custom-primary-color-dark-o7: rgba(9, 71, 63, 0.7);
+
+  --custom-secondary-color: rgba(181, 203, 153, 0.9);
+  --custom-secondary-color-o8: rgba(181, 203, 153, 0.9);
+  --custom-secondary-color-o7: rgba(181, 203, 153, 0.8);
+  --custom-secondary-color-o6: rgba(181, 203, 153, 0.7);
+  --custom-secondary-color-o5: rgba(181, 203, 153, 0.5);
+
+  --custom-color-accent: rgb(252, 224, 155, 0.9);
+  --custom-color-accent-o8: rgb(252, 224, 155, 0.8);
+  --custom-color-accent-o7: rgb(252, 224, 155, 0.7);
+  --custom-color-accent-o6: rgb(252, 224, 155, 0.6);
+  --custom-color-accent-o5: rgb(252, 224, 155, 0.5);
+  --custom-color-accent-o4: rgb(252, 224, 155, 0.4);
+  --custom-color-accent-o1: rgb(252, 224, 155, 0.1);
+
+  --custom-color-accent-dark: rgb(178, 83, 62, 0.9);
+  --custom-color-accent-dark-o8: rgb(178, 83, 62, 0.8);
+  --custom-color-accent-dark-o7: rgb(178, 83, 62, 0.7);
+  --custom-color-accent-dark-o6: rgb(178, 83, 62, 0.6);
+  --custom-color-accent-dark-o5: rgb(178, 83, 62, 0.5);
+  --custom-color-accent-dark-o4: rgb(178, 83, 62, 0.4);
+  --custom-color-accent-dark-o1: rgb(178, 83, 62, 0.1);
+
+  --custom-color-accent-light: rgba(109, 219, 206, 0.9);
+  --custom-color-accent-light-o1: rgba(109, 219, 206, 0.1);
+}
+
+.center-hv-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover:hover{
+  cursor: pointer;
+}
+
+.color-primary-hover:hover {
+  cursor: pointer;
+  color: var(--custom-primary-color);
+}
+
+.color-primary{
+  color: var(--custom-primary-color);
+}
+
+.color-primary-click{
+  color: var(--custom-primary-color-o8);
+}
+
+.color-primary-click:hover{
+  color: var(--custom-primary-color);
+  cursor: pointer;
+}
+
+.color-accent{
+  color: var(--custom-color-accent);
+}
+
+.color-dark{
+  color: rgba(0, 0, 0, 0.9)
+}
+
+/*Custom button*/
+.custom-btn-primary {
+  color: #FfFfFf !important;
+  background: linear-gradient(90deg, var(--custom-primary-color) 0%, var(--custom-primary-color-o8) 50%, var(--custom-primary-color-o7) 100%);
+}
+
+.custom-btn-primary:hover{
+  background: linear-gradient(90deg, var(--custom-primary-color) 0%, var(--custom-primary-color) 50%,var(--custom-primary-color) 100%);
+}
+
+.custom-btn-primary:disabled{
+  opacity: 0.6;
+  background: rgba(67,8,134,0.6);
+}
+
+.custom-btn-primary-outline{
+  border: var(--custom-primary-color) solid 1px;
+  color: var(--custom-primary-color-light);
+  background: transparent;
+}
+
+.custom-btn-primary-outline:hover{
+  border: var(--custom-primary-color) solid 1px;
+  color: #fff;
+  background: var(--custom-primary-color-o8);
+  .color-accent {
+    color: #fff;
+  }
+}
+
+.custom-btn-tranparent{
+  color: var(--custom-primary-color);
+  background: transparent;
+}
+
+.custom-btn-tranparent:hover{
+  border: var(--custom-primary-color) solid 1px;
+  color: var(--custom-primary-color); ;
+  .color-accent {
+    color: var(--custom-primary-color);;
+  }
+}
+
+.custom-btn-accent{
+  color: #FfFfFf !important;
+  /*background-color: rgba(5, 170, 150, 0.8) !important;*/
+  background: linear-gradient(90deg, var(--custom-color-accent) 0%, var(--custom-color-accent-o8) 50%, var(--custom-color-accent-o7) 100%);
+
+}
+
+.custom-btn-accent:hover{
+  background: var(--custom-color-accent) !important;
+}
+
+
+
+/*ICON*/
+.input-icon-l{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
